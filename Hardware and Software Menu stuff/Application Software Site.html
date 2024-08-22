@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+          box-sizing: border-box;
+        }
+        
+        body {
+          font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        /* Style the header */
+        header {
+          background-color: #666;
+          padding: 30px;
+          text-align: center;
+          font-size: 35px;
+          color: white;
+        }
+        
+        /* Create two columns/boxes that floats next to each other */
+        nav {
+          float: left;
+          width: 30%;
+          height: 300px; /* only for demonstration, should be removed */
+          background: #ccc;
+          padding: 20px;
+        }
+        
+        /* Style the list inside the menu */
+        nav ul {
+          list-style-type: none;
+          padding: 0;
+        }
+        
+        article {
+          float: left;
+          padding: 20px;
+          width: 70%;
+          background-color: #f1f1f1;
+          height: 300px; /* only for demonstration, should be removed */
+        }
+        
+        /* Clear floats after the columns */
+        section::after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+        
+        /* Style the footer */
+        footer {
+          background-color: #777;
+          padding: 10px;
+          text-align: center;
+          color: white;
+        }
+        
+        /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+        @media (max-width: 600px) {
+          nav, article {
+            width: 100%;
+            height: auto;
+          }
+        }
+        </style>
+</head>
+<body style="background-color: #342e2e;">
+    <header>
+        <h2>Application Software</h2>
+    </header>
+    <section style="background-color: #ffffff;">
+            <table border="1">
+              <tr>
+                <th><a><img src="Google Chrome.jpg" width="950"/a></th>
+                <th><a><img src="Valorant.jpg" width="950"/a></th>
+              </tr>
+              <tr>
+                <td><b>Google ( Google Chrome ) - </b> Google Chrome is a free web browser developed by Google, used for accessing web pages on the internet. As of March 2022, it is the most popular web browser of choice worldwide, with more than 62% of the web browser market share. Google Chrome is also a cross-platform browser, meaning some versions work on different computers, mobile devices, and operating systems. According to Statista, Google Chrome for Android is the most used version, holding more than 36% of the global web browser market share as of January 2022.</td>
+                <td><b>Valorant - </b> Valorant is a video game made by RIOT Games. This video game can be played for free by any user.</td>
+              </tr>
+            </table>
+    </section>
+    <footer>
+        <style>
+            .left-align {
+                text-align: left;
+            }
+        </style>
+        <p class="left-align">Author of page:Amiel Gabriel M. Lapuz</p>
+        <p class="left-align">Section: IT11S1</p>
+    </footer>
+</body>
+</html>

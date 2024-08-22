@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+          box-sizing: border-box;
+        }
+        
+        body {
+          font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        /* Style the header */
+        header {
+          background-color: #666;
+          padding: 30px;
+          text-align: center;
+          font-size: 35px;
+          color: white;
+        }
+        
+        /* Create two columns/boxes that floats next to each other */
+        nav {
+          float: left;
+          width: 30%;
+          height: 300px; /* only for demonstration, should be removed */
+          background: #ccc;
+          padding: 20px;
+        }
+        
+        /* Style the list inside the menu */
+        nav ul {
+          list-style-type: none;
+          padding: 0;
+        }
+        
+        article {
+          float: left;
+          padding: 20px;
+          width: 70%;
+          background-color: #f1f1f1;
+          height: 300px; /* only for demonstration, should be removed */
+        }
+        
+        /* Clear floats after the columns */
+        section::after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+        
+        /* Style the footer */
+        footer {
+          background-color: #777;
+          padding: 10px;
+          text-align: center;
+          color: white;
+        }
+        
+        /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+        @media (max-width: 600px) {
+          nav, article {
+            width: 100%;
+            height: auto;
+          }
+        }
+        </style>
+</head>
+<body style="background-color: #342e2e;">
+    <header>
+        <h2>Hardware</h2>
+    </header>
+    <section style="background-color: #ffffff;">
+            <table border="1">
+              <tr>
+                <th>
+                    <a href="https://www.computerhope.com/jargon/m/mothboar.htm"><img src="motherboard.png" width="400" height="500"></a>
+                </th>
+                <th>
+                    <a href="https://www.crucial.com/articles/about-memory/support-what-does-computer-memory-do"><img src="RAM.png" width="400" height="500"</a>
+                </th>
+                <th>
+                    <a href="https://www.howtogeek.com/694869/what-is-a-cpu-and-what-does-it-do/"><img src="CPU.jpg" width="500" height="400"></a>
+                </th>
+                <th>
+                    <a href="https://www.geeksforgeeks.org/difference-between-hard-disk-drive-hdd-and-solid-state-drive-ssd/"><img src="SSD HDD.jpeg" width="560" height="500"</a>
+                </th>
+              </tr>
+              <tr>
+                <td>
+                    <b>Motherboard - </b> The motherboard is the foundation of any computer, it is the biggest board in the computer. This hardware allocates power and allows communication to and between all of the computer's components
+                </td>
+                <td>
+                    <b>RAM (Random Access Memory) - </b> The Ram is simply a temporary storage in your computer, it acts as a place to store and access data given the application used. When an application such as Word or Google is being used, RAM reads the data coming from these apps and stores them in the computer which then executes on the monitor.
+                </td>
+                <td>
+                    <b>CPU (Central Processing Unit) - </b> The CPU's job is to act as the brain of the computer. This component processes instructions that come from programs, operating systems, or other components in your PC.
+                </td>
+                <td>
+                    <b>SSD (Solid State Drive) and HDD (Hard Disk Drive) - </b> An HDD consists of a spinning disk (platter) coated with a magnetic material and a read/write head that reads and writes data on the disk’s surface. The read/write head moves back and forth across the spinning disk to access different parts of the data stored on the disk. SSDs, on the other hand, use flash memory to store data instead of a spinning disk. SSDs have no moving parts, making them much faster, more durable, and less susceptible to mechanical failure than HDDs.
+                </td>
+              </tr>
+            </table>
+    </section>
+    <footer>
+        <style>
+            .left-align {
+                text-align: left;
+            }
+        </style>
+        <p class="left-align">Author of page:Amiel Gabriel M. Lapuz</p>
+        <p class="left-align">Section: IT11S1</p>
+    </footer>
+</body>
+</html>
